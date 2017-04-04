@@ -1,16 +1,8 @@
-golang-1.7 (1.7.4-1~bpo8+2) jessie-backports; urgency=medium
+golang-1.7 (1.7.4-2) unstable; urgency=medium
 
-  * Build-Depend on golang-1.6-go specifically to ensure go >= 1.4 is present
-    on all architectures (should fix builds on !amd64 !arm64)
-    (Thanks mwhudson).
+  * Backport CL 37964 for tzdata 2017a changes (Closes: #859583)
 
- -- Michael Stapelberg <stapelberg@debian.org>  Tue, 31 Jan 2017 21:05:46 +0100
-
-golang-1.7 (1.7.4-1~bpo8+1) jessie-backports; urgency=medium
-
-  * Rebuild for jessie-backports.
-
- -- Michael Stapelberg <stapelberg@debian.org>  Thu, 12 Jan 2017 09:26:21 +0100
+ -- Michael Hudson-Doyle <michael.hudson@ubuntu.com>  Wed, 05 Apr 2017 11:53:49 +1200
 
 golang-1.7 (1.7.4-1) unstable; urgency=medium
 

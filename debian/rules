@@ -92,15 +92,12 @@ override_dh_install-arch:
 override_dh_strip:
 	dh_strip -Xtestdata
 
-override_dh_strip_nondeterminism:
-	# chokes on debian/golang-1.7-src/usr/share/go-1.7/src/archive/zip/testdata/zip64.zip
-
 override_dh_shlibdeps:
 	dh_shlibdeps -Xtestdata -Xtest
 
 override_dh_auto_build-arch:
 	[ -f VERSION ] || echo "debian snapshot +$$(dpkg-parsechangelog -SVersion)" > VERSION
-	export GOROOT_BOOTSTRAP=/usr/lib/go-1.6 \
+	export GOROOT_BOOTSTRAP=$$(env -i go env GOROOT) \
 		&& cd src \
 		&& $(CURDIR)/debian/helpers/goenv.sh \
 			bash ./make.bash --no-banner
