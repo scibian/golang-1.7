@@ -5,13 +5,13 @@
 Source: golang-1.7
 Section: devel
 Priority: optional
-Maintainer: Go Compiler Team <pkg-golang-devel@lists.alioth.debian.org>
+Maintainer: Scibian Project <packaging@scibian.org>
 Uploaders: Michael Stapelberg <stapelberg@debian.org>,
            Paul Tagliamonte <paultag@debian.org>,
            Tianon Gravi <tianon@debian.org>,
            Michael Hudson-Doyle <michael.hudson@ubuntu.com>
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-golang/golang.git
-Vcs-Git: https://anonscm.debian.org/git/pkg-golang/golang.git -b golang-1.7
+Vcs-Browser: https://github.com/scibian/golang-1.7
+Vcs-Git:  https://github.com/scibian/golang-1.7.git
 Build-Depends: debhelper (>= 7.4.10),
                golang-1.6-go | gccgo (>= 4:5~),
                netbase
