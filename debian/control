@@ -13,7 +13,7 @@ Uploaders: Michael Stapelberg <stapelberg@debian.org>,
 Vcs-Browser: https://github.com/scibian/golang-1.7
 Vcs-Git:  https://github.com/scibian/golang-1.7.git
 Build-Depends: debhelper (>= 7.4.10),
-               golang-1.6-go | gccgo (>= 4:5~),
+               golang-any (>= 2:1.4~) | golang-go (>= 2:1.4~) | gccgo (>= 4:5~),
                netbase
 Standards-Version: 3.9.8
 Homepage: https://golang.org
